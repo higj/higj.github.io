@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he-IL">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" href="/assets/images/favicon.png">
+
+
+<title>סימטריה בבעיות בחשמל | ePhysics - פיזיקה על קצה המזלג</title>
+
+
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>סימטריה בבעיות בחשמל | ePhysics - פיזיקה על קצה המזלג</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="סימטריה בבעיות בחשמל" />
+<meta name="author" content="admin" />
+<meta property="og:locale" content="he_IL" />
+<meta name="description" content="הרבה בעיות בפיזיקה בכלל ובאלקטרומגנטיות בפרט עלולות להיראות קשות יתר על המידה ממבט ראשון. אך לעיתים ניתן לזהות תכונה אחת בבעיה אשר תאפשר לנו לפתור אותה כמעט בעל פה. התכונה המופלאה הזאת נקראת סימטריה ואנו נדון במאמר זה על תרומתה לפתרון בעיות מתחום החשמל." />
+<meta property="og:description" content="הרבה בעיות בפיזיקה בכלל ובאלקטרומגנטיות בפרט עלולות להיראות קשות יתר על המידה ממבט ראשון. אך לעיתים ניתן לזהות תכונה אחת בבעיה אשר תאפשר לנו לפתור אותה כמעט בעל פה. התכונה המופלאה הזאת נקראת סימטריה ואנו נדון במאמר זה על תרומתה לפתרון בעיות מתחום החשמל." />
+<link rel="canonical" href="http://localhost:4000/%D7%A1%D7%99%D7%9E%D7%98%D7%A8%D7%99%D7%94-%D7%91%D7%91%D7%A2%D7%99%D7%95%D7%AA-%D7%91%D7%97%D7%A9%D7%9E%D7%9C/" />
+<meta property="og:url" content="http://localhost:4000/%D7%A1%D7%99%D7%9E%D7%98%D7%A8%D7%99%D7%94-%D7%91%D7%91%D7%A2%D7%99%D7%95%D7%AA-%D7%91%D7%97%D7%A9%D7%9E%D7%9C/" />
+<meta property="og:site_name" content="ePhysics - פיזיקה על קצה המזלג" />
+<meta property="og:image" content="http://localhost:4000/2013/09/gotowall.com20111221_192400_1023.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2013-09-22T19:03:33+02:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://localhost:4000/2013/09/gotowall.com20111221_192400_1023.jpg" />
+<meta property="twitter:title" content="סימטריה בבעיות בחשמל" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/%D7%A1%D7%99%D7%9E%D7%98%D7%A8%D7%99%D7%94-%D7%91%D7%91%D7%A2%D7%99%D7%95%D7%AA-%D7%91%D7%97%D7%A9%D7%9E%D7%9C/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/logo.png"},"name":"admin"},"image":"http://localhost:4000/2013/09/gotowall.com20111221_192400_1023.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/%D7%A1%D7%99%D7%9E%D7%98%D7%A8%D7%99%D7%94-%D7%91%D7%91%D7%A2%D7%99%D7%95%D7%AA-%D7%91%D7%97%D7%A9%D7%9E%D7%9C/"},"author":{"@type":"Person","name":"admin"},"description":"הרבה בעיות בפיזיקה בכלל ובאלקטרומגנטיות בפרט עלולות להיראות קשות יתר על המידה ממבט ראשון. אך לעיתים ניתן לזהות תכונה אחת בבעיה אשר תאפשר לנו לפתור אותה כמעט בעל פה. התכונה המופלאה הזאת נקראת סימטריה ואנו נדון במאמר זה על תרומתה לפתרון בעיות מתחום החשמל.","headline":"סימטריה בבעיות בחשמל","@type":"BlogPosting","dateModified":"2013-09-22T19:03:33+02:00","datePublished":"2013-09-22T19:03:33+02:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+<link href="/assets/css/theme.css" rel="stylesheet">
+
+<link rel='dns-prefetch' href='//ajax.googleapis.com' />
+<script src="/assets/js/load-mathjax.js" async></script>
+
+
+
+</head>
+
+
+<body class="layout-post">
+
+
+<!-- Menu Navigation
+================================================== -->
+<div class="navigation-wrap start-header start-style">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                    <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                </svg>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto font-weight-bold d-flex align-items-center">
+                    
+                        <li class="nav-item">
+                            <a class="nav-link px-3 " href="/אודותינו/" alt="אודותינו">אודותינו</a>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a class="nav-link px-3 " href="/צור-קשר/" alt="צור קשר">צור קשר</a>
+                        </li>
+                    
+                </ul>
+            </div>
+
+          
+            
+              <a class="navbar-brand text-dark font-weight-bold big d-flex align-items-center" href="/">
+                <img class="mr-2" src="/assets/images/logo.png" alt="" width="194" />
+              </a>
+            
+          
+
+          
+
+        </div>
+      </nav>
+    </div>
+
+
+<!-- Container
+================================================== -->
+<main class="container">
+      <!-- Begin Article
+================================================== -->
+
+	<div class="row justify-content-center">
+		
+
+		<!-- Post -->        
+        
+        
+		<div class="col-sm-8"> 
+            <!-- Post Featured Image -->
+			<img class="featured-image img-fluid rounded" src="/assets/posts/2013/09/gotowall.com20111221_192400_1023.jpg" alt="סימטריה בבעיות בחשמל">
+			<!-- End Featured Image -->
+			<div class="mainheading">
+                <!-- Post Categories -->
+                <div class="after-post-tags">
+                    <!-- Post Date -->
+                    <b>תאריך:</b>
+                    <small>
+                        <span class="post-date">
+                            <time class="post-date" datetime="2013-09-22">
+                                
+                                
+                                22
+                                בספטמבר,
+                                    
+                                2013
+                            </time>
+                        </span>
+                        
+                    </small>
+                    <ul class="tags">
+                        
+                        
+                        <li>
+                         <a href="/נושאים#אלקטרומגנטיות">אלקטרומגנטיות</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <!-- End Categories -->
+                
+                <!-- Post Title -->
+				<h3 class="posttitle">סימטריה בבעיות בחשמל</h3>
+                
+			</div>
+
+
+			<!-- Post Content -->
+			<div class="article-post serif-font">
+				<p>הרבה בעיות בפיזיקה בכלל ובאלקטרומגנטיות בפרט עלולות להיראות קשות יתר על המידה ממבט ראשון. אך לעיתים ניתן לזהות תכונה אחת בבעיה אשר תאפשר לנו לפתור אותה כמעט בעל פה. התכונה המופלאה הזאת נקראת סימטריה ואנו נדון במאמר זה על תרומתה לפתרון בעיות מתחום החשמל.</p>
+
+<p>רובנו שמענו על מושג הסימטריה ופגשנו אותו “בפעולה” בחיי היום יום, אך אם נשאל אנשים “מהי סימטריה?” בהרבה מקרים אנו לא נקבל הסבר מדוייק. סימטריה תמיד התקשרה ליופי ,לאידיאליות ולהרמוניה בטבע, אך מהי בעצם סימטריה? סימטריה היא אי-השתנות (אינווריאנטיות) של מערכת תחת התמרות (טרנספורמציות) כלשהן. למשל, אם מדברים על סימטריה גאומטריות כמו סימטריית שיקוף, הרי שהכוונה היא לכך שהמערכת תיראה אותו הדבר אם נבצע שיקוף שלה לאורך ציר שיקוף מתאים.<br />
+מסתבר שמלבד היופי של הסימטריה היא גם מאוד שימושית בפתרון בעיות פיזיקליות שונות. אולם לא תמיד פשוט לזהות אותה. נראה כמה דוגמאות.</p>
+
+<h3 id="שש-נקודות">שש נקודות</h3>
+
+<p>&gt; נתונות שש נקודות כאשר כל נקודה מחוברת לנקודה אחרת באמצעות נגד בעל התנגדות $R$. מהי ההתנגדות השקולה בין שתי נקודות כלשהן?</p>
+
+<p>מפני שלא נתון כיצד הנקודות ממוקמות אנו מייד מסיקים כי ארבעת הנקודות שלא נבחרו הן שוות ערך. למה הכוונה? הכוונה היא שקיימת סימטריית תמורה (permutation symmetry) ביחס לנקודות הללו, כלומר המערכת תיראה אותו הדבר אם נחליף מקומות בין נקודה כלשהי לבין נקודה אחרת מתוך ארבעת הנקודות שלא נבחרו. במילים אחרות – אין שום דבר שמבדיל בין הנקודות.<br />
+ניתן להציג את המערכת בצורת <a href="http://he.wikipedia.org/wiki/%D7%AA%D7%9E%D7%A0%D7%99%D7%95%D7%9F" target="_blank">תמניון</a> בכדי לראות ויזואלית את הסימטריה הקיימת:</p>
+
+<picture class="caption aligncenter">
+    
+    <source media="(max-width: 230px)" srcset="/assets/resized/180/octahedron_rotational_symmetry.png" />
+    
+    <source media="(max-width: 530px)" srcset="/assets/resized/480/octahedron_rotational_symmetry.png" />
+    
+    
+    <img src="/assets/posts/2013/09/octahedron_rotational_symmetry.png" style="display:block; margin: 0 auto;max-width:387px;" />
+
+
+    <p class="caption-text">
+      
+      ב-$O$ הנגדים לא נחתכים (כמו כן, $O$ איננה נקודה בפני עצמה ונועדה לסימון בלבד); הנגדים מיוצגים ע"י קווים כתילים מוליכים
+      
+    </p>
+</picture>
+
+<p>כפי שניתן לראות, קיימת סימטריה סיבובית ביחס לציר $AF$ – סיבוב של $90^{\circ}$ סביב ציר זה לא ישנה את המערכת.<br />
+אבל איך זה עוזר לנו? ובכן, מפני שהנקודות שוות ערך, הן בעלות אותו פוטנציאל חשמלי ולפיכך לא זורם בנגדים שמחברים ביניהן שום זרם. מפני שלא זורם זרם בנגדים הללו, אנו רשאים להסיר אותם מהמערכת (כי זה לא משנה האם יש נגד שלא זורם בו זרם או אין נגד בכלל). המערכת שלנו הופכת להיות פשוטה ביותר:</p>
+
+<picture class="caption aligncenter">
+    
+    <source media="(max-width: 230px)" srcset="/assets/resized/180/restitors_network_2.png" />
+    
+    
+    <img src="/assets/posts/2013/09/restitors_network_2.png" style="display:block; margin: 0 auto;max-width:312px;" />
+
+
+    <p class="caption-text">
+      
+      המערכת לאחר הסרת הנגדים שלא עובר בהם זרם
+      
+    </p>
+</picture>
+
+<p>הנגדים המחברים את הנקודה השמאלית ואת הנקודה הימנית לנקודה העליונה מחוברים בטור ($R+R=2R$). כנ”ל לגבי שאר זוגות הנגדים. לאחר חיבור כל הנגדים המחוברים בטור, נקבל מערכת של נגדים המחוברים במקביל:<br />
+\(\frac{1}{R'}=4 \cdot \frac{1}{2 R} + \frac{1}{R}\)<br />
+לכן ההתנגדות השקולה $R’$ תיהיה<br />
+\(R'=\frac{R}{3}\)</p>
+
+<h3 id="מעגל-עם-גשר">מעגל עם גשר</h3>
+
+<p>&gt; חשב את ההתנגדות השקולה בין הנקודות $A$ ו-$D$ במעגל החשמלי המתואר באיור.</p>
+
+<p><img alt="resistors_network_3" class="aligncenter size-full wp-image-374" height="200" sizes="(max-width: 400px) 100vw, 400px" src="https://ephysics.co.il/wp-content/uploads/2013/09/resistors_network_3.png" srcset="https://ephysics.co.il/wp-content/uploads/2013/09/resistors_network_3.png 400w, https://ephysics.co.il/wp-content/uploads/2013/09/resistors_network_3-300x150.png 300w" width="400" /><br />
+זוהי דוגמה טובה לבעיה שבה קשה יותר לראות את הסימטריה בצורה שבה המערכת נתונה לנו. לפיכך עלינו לסדר את המעגל בשלבים כך שיהיה נוח לראות את הסימטריה שקיימת בו:</p>
+
+<p>1.<img alt="resistors_network_4" class="aligncenter size-full wp-image-378" height="200" sizes="(max-width: 400px) 100vw, 400px" src="https://ephysics.co.il/wp-content/uploads/2013/09/resistors_network_4.png" srcset="https://ephysics.co.il/wp-content/uploads/2013/09/resistors_network_4.png 400w, https://ephysics.co.il/wp-content/uploads/2013/09/resistors_network_4-300x150.png 300w" width="400" /> 
+  2.<img alt="resistors_network_5" class="aligncenter size-full wp-image-382" height="200" sizes="(max-width: 400px) 100vw, 400px" src="https://ephysics.co.il/wp-content/uploads/2013/09/resistors_network_5.png" srcset="https://ephysics.co.il/wp-content/uploads/2013/09/resistors_network_5.png 400w, https://ephysics.co.il/wp-content/uploads/2013/09/resistors_network_5-300x150.png 300w" width="400" /></p>
+
+<p>כעת ניתן לראות בבירור את הסימטריה השיקופית סביב ציר $AD$. אם נחליף מקומות בין הנקודה $B$ ל-$C$, המערכת תיראה אותו הדבר. זה אומר שהנקודות הללו שוות ערך ולפיכך הפוטנציאל החשמלי שלהם זהה. מכאן שלא זורם זרם בנגד שמחבר ביניהן. אפשר לראות זאת גם מ<a href="http://he.wikipedia.org/wiki/%D7%97%D7%95%D7%A7%D7%99_%D7%A7%D7%99%D7%A8%D7%9B%D7%94%D7%95%D7%A3" target="_blank">חוקי קירכהוף</a> – מפני שכל הנגדים הינם בעלי התנגדות זהה, הרי שבענף $ABD$ זורם אותו זרם כמו בענף $ACD$, לכן המתח בין נקודות $A$ ו-$B$ שווה למתח בין נקודות $A$ ו-$C$, מה שמוביל אותנו למסקנה שהנקודות $B$ ו-$C$ בעלי אותו פוטנציאל. כאמור, ניתן להסיר את הנגד אם לא זורם בו זרם, לפיכך אפשר להסיר את הנגד שמחבר בין $B$ ל-$C$.<br />
+נשארים לנו שני נגדים בענף $ABD$ המחוברים במקביל לשני הנגדים בענף $ACD$. כלומר ההנתגדות השקולה:<br />
+\(\frac{1}{R'}=\frac{1}{2R}+\frac{1}{2R}\)<br />
+לכן:<br />
+\(R'=R\)</p>
+
+                <div class="clearfix"></div>
+			</div>
+            
+			
+            
+            
+             <!-- Author Box -->
+                				
+				<div class="row post-top-meta">
+					<div class="col-md-2">
+						<img class="author-thumb" src="/assets/images/admin-avatar.png" alt="צוות ePhysics">
+					</div>
+					<div class="col-md-10">
+						<a target="_blank" class="link-dark" href="https://ephysics.co.il" style="font-weight: bold;">צוות ePhysics</a>
+                        <a target="_blank" href="https://twitter.com/ephysicsisrael" class="btn follow">עקוב</a>
+						<br />
+                        <span class="author-description">צוות האתר (כותבים ועורכים).</span>
+					</div>
+				</div>				
+                
+            
+            
+            <!-- Begin Comments
+            ================================================== -->
+            <section>
+            <div id="comments">
+                
+            </div>
+            </section>
+            <!--End Comments
+            ================================================== -->
+            
+            
+
+		</div>
+		<!-- End Post -->
+
+
+        
+        
+        
+
+	</div>
+
+<!-- End Article
+================================================== -->
+</main>
+
+<!-- Footer
+================================================== -->
+<footer class="footer container text-center">
+  <ul class="p-0 mb-1 small">
+    
+    </ul>
+    <div class="copyright small">
+        2013-2022 © כל הזכויות שמורות ל-ePhysics.co.il | <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img decoding="async" alt="Creative Commons License" style="border-width:0;vertical-align:middle" src="https://licensebuttons.net/l/by-nc-sa/3.0/80x15.png" width="80" height="15"></a>
+    </div>
+</footer>
+
+<!-- JavaScript
+================================================== -->
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/theme.js"></script>
+
+</body>
+
+</html>

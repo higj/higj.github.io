@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he-IL">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" href="/assets/images/favicon.png">
+
+
+<title>חוק גאוס | ePhysics - פיזיקה על קצה המזלג</title>
+
+
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>חוק גאוס | ePhysics - פיזיקה על קצה המזלג</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="חוק גאוס" />
+<meta name="author" content="admin" />
+<meta property="og:locale" content="he_IL" />
+<meta name="description" content="ניתן לייצג שדה אלקטרוסטטי (חשמלי) בצורה גרפית על ידי קווי שדה. על מנת לקבל את כיוון וקטור השדה בנקודה מסוימת, מעבירים משיק לקו השדה באותה הנקודה. השוואת צפיפות קווי השדה בנקודות שונות מאפשרת לנו לקבוע היכן ופי כמה השדה חזק יותר. אך בזה חשיבות קווי השדה לא נגמרת." />
+<meta property="og:description" content="ניתן לייצג שדה אלקטרוסטטי (חשמלי) בצורה גרפית על ידי קווי שדה. על מנת לקבל את כיוון וקטור השדה בנקודה מסוימת, מעבירים משיק לקו השדה באותה הנקודה. השוואת צפיפות קווי השדה בנקודות שונות מאפשרת לנו לקבוע היכן ופי כמה השדה חזק יותר. אך בזה חשיבות קווי השדה לא נגמרת." />
+<link rel="canonical" href="http://localhost:4000/%D7%9E%D7%A9%D7%A4%D7%98-%D7%92%D7%90%D7%95%D7%A1/" />
+<meta property="og:url" content="http://localhost:4000/%D7%9E%D7%A9%D7%A4%D7%98-%D7%92%D7%90%D7%95%D7%A1/" />
+<meta property="og:site_name" content="ePhysics - פיזיקה על קצה המזלג" />
+<meta property="og:image" content="http://localhost:4000/2014/09/faraday_cage.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2014-09-07T15:17:54+02:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://localhost:4000/2014/09/faraday_cage.jpg" />
+<meta property="twitter:title" content="חוק גאוס" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/%D7%9E%D7%A9%D7%A4%D7%98-%D7%92%D7%90%D7%95%D7%A1/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/logo.png"},"name":"admin"},"image":"http://localhost:4000/2014/09/faraday_cage.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/%D7%9E%D7%A9%D7%A4%D7%98-%D7%92%D7%90%D7%95%D7%A1/"},"author":{"@type":"Person","name":"admin"},"description":"ניתן לייצג שדה אלקטרוסטטי (חשמלי) בצורה גרפית על ידי קווי שדה. על מנת לקבל את כיוון וקטור השדה בנקודה מסוימת, מעבירים משיק לקו השדה באותה הנקודה. השוואת צפיפות קווי השדה בנקודות שונות מאפשרת לנו לקבוע היכן ופי כמה השדה חזק יותר. אך בזה חשיבות קווי השדה לא נגמרת.","headline":"חוק גאוס","@type":"BlogPosting","dateModified":"2014-09-07T15:17:54+02:00","datePublished":"2014-09-07T15:17:54+02:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+<link href="/assets/css/theme.css" rel="stylesheet">
+
+<link rel='dns-prefetch' href='//ajax.googleapis.com' />
+<script src="/assets/js/load-mathjax.js" async></script>
+
+
+
+</head>
+
+
+<body class="layout-post">
+
+
+<!-- Menu Navigation
+================================================== -->
+<div class="navigation-wrap start-header start-style">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                    <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                </svg>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto font-weight-bold d-flex align-items-center">
+                    
+                        <li class="nav-item">
+                            <a class="nav-link px-3 " href="/אודותינו/" alt="אודותינו">אודותינו</a>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a class="nav-link px-3 " href="/צור-קשר/" alt="צור קשר">צור קשר</a>
+                        </li>
+                    
+                </ul>
+            </div>
+
+          
+            
+              <a class="navbar-brand text-dark font-weight-bold big d-flex align-items-center" href="/">
+                <img class="mr-2" src="/assets/images/logo.png" alt="" width="194" />
+              </a>
+            
+          
+
+          
+
+        </div>
+      </nav>
+    </div>
+
+
+<!-- Container
+================================================== -->
+<main class="container">
+      <!-- Begin Article
+================================================== -->
+
+	<div class="row justify-content-center">
+		
+
+		<!-- Post -->        
+        
+        
+		<div class="col-sm-8"> 
+            <!-- Post Featured Image -->
+			<img class="featured-image img-fluid rounded" src="/assets/posts/2014/09/faraday_cage.jpg" alt="חוק גאוס">
+			<!-- End Featured Image -->
+			<div class="mainheading">
+                <!-- Post Categories -->
+                <div class="after-post-tags">
+                    <!-- Post Date -->
+                    <b>תאריך:</b>
+                    <small>
+                        <span class="post-date">
+                            <time class="post-date" datetime="2014-09-07">
+                                
+                                
+                                7
+                                בספטמבר,
+                                    
+                                2014
+                            </time>
+                        </span>
+                        
+                    </small>
+                    <ul class="tags">
+                        
+                        
+                        <li>
+                         <a href="/נושאים#אלקטרומגנטיות">אלקטרומגנטיות</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <!-- End Categories -->
+                
+                <!-- Post Title -->
+				<h3 class="posttitle">חוק גאוס</h3>
+                
+			</div>
+
+
+			<!-- Post Content -->
+			<div class="article-post serif-font">
+				<p>ניתן לייצג שדה אלקטרוסטטי (חשמלי) בצורה גרפית על ידי קווי שדה. על מנת לקבל את כיוון וקטור השדה בנקודה מסוימת, מעבירים משיק לקו השדה באותה הנקודה. השוואת צפיפות קווי השדה בנקודות שונות מאפשרת לנו לקבוע היכן ופי כמה השדה חזק יותר. אך בזה חשיבות קווי השדה לא נגמרת.</p>
+
+<p>כידוע, שדה אלקטרוסטטי בריק הינו רציף. כלומר, אפשר לצייר אותו מבלי להרים את העיפרון – הוא לא נקטע בפתאומיות במקום כלשהו. זה רק נשמע לנו כל כך מובן מאילו. לתכונה זו יש חשיבות רבה. אילו חוק קולון היה נראה טיפה שונה, כבר לא היינו יכולים להעביר קווי שדה רציפים. ניקח למשל מטען נקודתי. ככל שנתרחק ממנו, צפיפות קווי השדה תקטן. אם נתרחק ממנו פי 2, צפיפות קווי השדה תקטן פי 4 (מספר קווי השדה כמובן לא ישתנה, אך שטח הפנים של ספירה שאותה חוצים הקווים יגדל פי 4 – ראה איור 1). גם עוצמת השדה תקטן פי 4. כל זה הודות לעובדה שבחוק קולון מופיע $1/r^2$. ומה אם היה שם $1/r^3$? עוצמת השדה הייתה קטנה פי 8, ובכדי לקיים את “חוק הצפיפות” היינו נאלצים לקטוע חצי מקווי השדה בדרך מ-$r$ ל-$2 r$. וכל זה עוד בריק!</p>
+
+<picture class="caption aligncenter">
+    
+    <source media="(max-width: 230px)" srcset="/assets/resized/180/Inverse_square_law.png" />
+    
+    <source media="(max-width: 530px)" srcset="/assets/resized/480/Inverse_square_law.png" />
+    
+    <source media="(max-width: 690px)" srcset="/assets/resized/640/Inverse_square_law.png" />
+    
+    <source media="(max-width: 850px)" srcset="/assets/resized/800/Inverse_square_law.png" />
+    
+    
+    <img src="/assets/posts/2014/08/Inverse_square_law.png" style="display:block; margin: 0 auto;max-width:485px;" />
+
+
+    <p class="caption-text">
+      
+      איור 1 – עוצמה של שדה חשמלי נמצאת ביחס הפוך לריבוע המרחק מהמטען שיוצר אותו
+      
+    </p>
+</picture>
+
+<p>חוק גאוס הינו הניסוח המתמטי של תכונת הרציפות של קווי השדה החשמלי. נדמיין לעצמנו משטח סגור (למשל, <a href="http://he.wikipedia.org/wiki/%D7%A1%D7%A4%D7%99%D7%A8%D7%94_%28%D7%92%D7%90%D7%95%D7%9E%D7%98%D7%A8%D7%99%D7%94%29" rel="noopener noreferrer" target="_blank">ספירה</a>).</p>
+
+<div class="scomm" style="padding: 0 15px">
+
+<p>
+    כל משטח סגור בהקשר של חוק גאוס נקרא <strong>משטח גאוסי</strong>. נשים לב שהמשטח לא חייב להיות אמיתי.
+  </p>
+<p>
+</p></div>
+
+<p>
+    אם בתוך המשטח אין מטענים, אז מספר קווי שדה הנכנסים אל תוך המשטח שווה בדיוק למספר הקווים היוצאים ממנו (איור 2). כלומר אם בתוך המשטח אין מטענים, אין גם קווי שדה שמתחילים או מסתיימים בתוך המשטח. אם נסמן את מספר הקווים שנכנסים אל תוך המשטח בפלוס ואת אלה שיוצאים ממנו – במינוס, "הסכום" שלהם יהיה אפס – אין קו שרק נכנס או רק יוצא מהמשטח.
+  </p>
+<picture class="caption aligncenter">
+    
+    <source media="(max-width: 230px)" srcset="/assets/resized/180/charge_outside_surface_field_lines.png" />
+    
+    <source media="(max-width: 530px)" srcset="/assets/resized/480/charge_outside_surface_field_lines.png" />
+    
+    
+    <img src="/assets/posts/2014/09/charge_outside_surface_field_lines.png" style="display:block; margin: 0 auto;max-width:387px;" />
+
+
+    <p class="caption-text">
+      
+      איור 2 – קווי שדה שנכנסים אל תוך המשטח גם יוצאים ממנו
+      
+    </p>
+</picture>
+
+<p>
+    ברור שאם המשטח עוטף מטען כלשהו, אזי יהיו קווים שרק ייצאו מהמשטח או רק ייכנסו אל תוכו. בנוסף, מספר הקווים היוצאים מהמשטח (או הנכנסים לתוכו) יהיה פרופורציוני לגודל המטען הכלוא בתוך המשטח. זהו למעשה הניסוח האיכותי של חוק גאוס.
+  </p>
+<p>
+    לפני שננסח את החוק בצורה כמותית, נציג כמה מושגים.
+  </p>
+<p>
+    נגדיר גודל סקלרי $\Phi$ שייקרא <strong>שטף חשמלי</strong> כמכפלה סקלרית של וקטור השדה החשמלי במשטח זעיר:
+  </p>
+<p>
+    $$\Phi = \vec{E} \cdot \vec{S} = E S \cos \alpha$$
+  </p>
+<p>
+    כאשר $\vec{E}$ – עוצמת השדה החשמלי בנקודה בה בחרנו את המשטח (מפני שהוא קטן, ניתן להתייחס אל השדה כאל אחיד באותו האזור), $\vec{S}$ – וקטור הניצב למשטח שבחרנו ושגודלו שווה לשטח המשטח ו-$\alpha$ – הזווית שבין שני הווקטורים.
+  </p>
+<p>
+    תסתכלו על איור 3: מספר קווי השדה החוצים את המשטח $S$ שווה למכפלת צפיפותם (מספר הקווים ליחידת שטח) בגודל השטח המאונך להם $S_{\perp} = S \cos \alpha$.
+  </p>
+<picture class="caption aligncenter">
+    
+    <source media="(max-width: 230px)" srcset="/assets/resized/180/electric_flux.png" />
+    
+    <source media="(max-width: 530px)" srcset="/assets/resized/480/electric_flux.png" />
+    
+    <source media="(max-width: 690px)" srcset="/assets/resized/640/electric_flux.png" />
+    
+    
+    <img src="/assets/posts/2014/08/electric_flux.png" style="display:block; margin: 0 auto;max-width:437px;" />
+
+
+    <p class="caption-text">
+      
+      איור 3 – שטף חשמלי העובר דרך משטח $S$
+      
+    </p>
+</picture>
+
+<p>
+    אבל כזכור, צפיפות הקווים פרופורציונית לעוצמת השדה $\vec{E}$. מכאן שמספר קווי השדה החוצים משטח מסוים פרופורציוני לשטף $\Phi$ העובר דרך המשטח. כמו כן, ברור כי אם מדובר במשטח שרירותי, השטף החשמלי שעובר דרכו שווה לסכום השטפים העוברים דרך החלקים הזעירים של המשטח.
+  </p>
+<p>
+    ל-$\Phi$ יש עוד תכונה חשובה. נכתוב את השטף החשמלי כך:
+  </p>
+<p>
+    $$\Phi = (E \cos \alpha) S = E_n S$$
+  </p>
+<p>
+    כאשר $E_n$ – היטל הוקטור $\vec{E}$ על הנורמל למשטח ($\vec{S}$).
+  </p>
+<p>
+    לפי עקרון הסופרפוזיציה, אם שדה חשמלי נוצר על ידי מספר מטענים, אפשר לכתוב אותו כסכום השדות שהמטענים יוצרים בנפרד:
+  </p>
+<p>
+    $$\vec{E} = \vec{E_1}+\vec{E_2}+…+\vec{E_k}$$
+  </p>
+<p>
+    אבל זה אומר שגם ההיטל של וקטור השדה השקול שווה לסכום ההיטלים של השדות הנפרדים:
+  </p>
+<p>
+    $$E_n = E_{1n} + E_{2n} + … + E_{kn}$$
+  </p>
+<p>
+    מכאן שהשטף הכולל הוא סכום השטפים מכל מטען בנפרד:
+  </p>
+<p>
+    $$\Phi = \Phi_1 + \Phi_2 + … + \Phi_k$$
+  </p>
+<p>
+    נחזור לדון במשטח סגור. נסכים שוקטור השטח של כל משטח קטן המרכיב את המשטח הסגור יהיה מכוון החוצה. כעת, בעזרת ההגדרה של שטף חשמלי, אנחנו יכולים לתאר בצורה כמותית את התרומה של כל הקווים העוברים דרך המשטח. הקווים שנכנסים ויוצאים מהמשטח, לא יוצרים בסך הכול שטף חשמלי, שכן השטף החשמלי השלילי בכניסה מתבטל עם השטף החיובי ביציאה. אולם השטף החשמלי הנוצר ע"י הקווים שמתחילים/מסתיימים בתוך המשטח איננו אפסי. אם כן, באמצעות ההגדרה של שטף חשמלי אנחנו יכולים להבדיל בין קווי שדה שיוצרים מטענים הנמצאים מחוץ למשטח לבין קווי שדה שיוצרים מטענים הנמצאים בתוכו. אנחנו גם מבינים מדוע המשטח צריך להיות סגור – אם הוא לא היה סגור, קווי שדה היו יכולים לחדור דרך המשטח ולצאת מבלי לעבור דרכו פעם נוספת.
+  </p>
+<p>
+    אך זה לא הכול. כפי שאמרנו, שטף חשמלי העובר דרך משטח מסוים פרופורציוני למספר קווי שדה העוברים דרך המשטח. אך מספר קווי השדה פרופורציוני לגודל המטען. בכתיב מתמטי:
+  </p>
+<p>
+    $$\Phi \propto n \propto q$$
+  </p>
+<p>
+    כאשר $n$ – מספר קווי השדה העוברים דרך המשטח.
+  </p>
+<p>
+    מכאן שאפשר לנסח את חוק גאוס כך:
+  </p>
+<div class="snotice" style="padding: 0 15px">
+
+<p>
+      שטף חשמלי הבוקע דרך משטח סגור פרופורציוני למטען הכלוא בתוך המשטח.
+    </p>
+<p>
+</p></div>
+<p>
+        לפני שנמצא את מקדם הפרופורציה, נדון במקרה פרטי אותו כבר ניתחנו בצורה איכותית – משטח סגור ללא מטען בפנים – ונוכיח באופן כמותי כי כל מטען חיצוני לא תורם לשטף הכולל הבוקע דרך המשטח.
+      </p>
+<p>
+        נתבונן בשני משטחים קטנים הנוצרים מחיתוך של משטח סגור כלשהו על ידי חרוט (איור 4).
+      </p>
+<picture class="caption aligncenter">
+    
+    <source media="(max-width: 230px)" srcset="/assets/resized/180/charge_outside_gaussian_sphere.png" />
+    
+    <source media="(max-width: 530px)" srcset="/assets/resized/480/charge_outside_gaussian_sphere.png" />
+    
+    <source media="(max-width: 690px)" srcset="/assets/resized/640/charge_outside_gaussian_sphere.png" />
+    
+    <source media="(max-width: 850px)" srcset="/assets/resized/800/charge_outside_gaussian_sphere.png" />
+    
+    
+    <img src="/assets/posts/2014/08/charge_outside_gaussian_sphere.png" style="display:block; margin: 0 auto;max-width:674px;" />
+
+
+    <p class="caption-text">
+      
+      איור 4 – מטען מחוץ למשטח גאוסי לא יוצר שטף חשמלי
+      
+    </p>
+</picture>
+
+<p>
+        השטף דרך המשטח הראשון:
+      </p>
+<p>
+        $$\Phi_1 = \vec{E_1} \cdot \vec{S_1} = – E_1 S_{1n}$$
+      </p>
+<p>
+        ודרך השני
+      </p>
+<p>
+        $$\Phi_2 = \vec{E_2} \cdot \vec{S_2} = E_2 S_{2n}$$
+      </p>
+<p>
+        כאשר
+      </p>
+<p>
+        $$|\vec{E_1}| = \frac{k q}{r_1^2}~~ , ~~ |\vec{E_2}| = \frac{kq}{r_2^2}$$
+      </p>
+<p>
+        זה הזמן להיזכר בדמיון – יחס השטחים $S_{1n}$ ו-$S_{2n}$ שווה לריבוע יחס המרחקים שלהם מקודקוד החרוט, כלומר מהמטען $q$:
+      </p>
+<p>
+        $$\frac{S_{1 n}}{S_{2 n}} = \frac{r_1^2}{r_2^2}$$
+      </p>
+<p>
+        אבל מכאן נובע שמתקיים היחס הבא
+      </p>
+<p>
+        $$\frac{E_2}{E_1}=\frac{S_{1 n}}{S_{2 n}}$$
+      </p>
+<p>
+        לכן
+      </p>
+<p>
+        $$\Phi_1 = – \Phi_2\\<br /> \Phi_1 + \Phi_2 = 0$$
+      </p>
+<p>
+        אותו הדבר קורה עם כל שאר המשטחים הזעירים שמרכיבים את המשטח הכולל.
+      </p>
+<p>
+        נחשב עכשיו את השטף החשמלי הבוקע דרך משטח כלשהו, כאשר בתוך המשטח יש מטען. נכתוב את קבוע קולון בצורה הבאה:
+      </p>
+<p>
+        $$k=\frac{1}{4 \pi \varepsilon_0}$$
+      </p>
+<p>
+        נדמיין לעצמנו ספירה בעלת רדיוס $r$ שעוטפת את המטען (איור 5). באותה צורה כמו שהוכחנו קודם, גם כאן ניתן להוכיח ש-$\Phi_1 = \Phi_2$. כלומר השטף דרך הספירה שווה לשטף דרך המשטח הנתון.
+      </p>
+<picture class="caption aligncenter">
+    
+    <source media="(max-width: 230px)" srcset="/assets/resized/180/charge_inside_gaussian_surface.png" />
+    
+    <source media="(max-width: 530px)" srcset="/assets/resized/480/charge_inside_gaussian_surface.png" />
+    
+    <source media="(max-width: 690px)" srcset="/assets/resized/640/charge_inside_gaussian_surface.png" />
+    
+    <source media="(max-width: 850px)" srcset="/assets/resized/800/charge_inside_gaussian_surface.png" />
+    
+    
+    <img src="/assets/posts/2014/09/charge_inside_gaussian_surface.png" style="display:block; margin: 0 auto;max-width:725px;" />
+
+
+    <p class="caption-text">
+      
+      איור 5 – מטען הכלוא בתוך משטח גאוסי
+      
+    </p>
+</picture>
+
+<p>
+        אולם את השטף שעובר דרך הספירה קל לחשב:
+      </p>
+<p>
+        $$\Phi = E S = \frac{1}{4 \pi \varepsilon_0} \frac{q}{r^2} \cdot 4 \pi r^2 = \frac{q}{\varepsilon_0}$$
+      </p>
+<p>
+        אנחנו רואים שהשטף הכולל דרך משטח סגור תלוי רק במטען שנמצא בתוכו ולא תלוי, למשל, ברדיוס. אם כן, נוכל לנסח את חוק גאוס גם כך:
+      </p>
+<div class="snotice" style="padding: 0 15px">
+
+<p>
+          שטף חשמלי הבוקע דרך משטח סגור שווה למטען הכלוא בתוך המשטח חלקי המקדם $\varepsilon_0$ (<strong>מקדם דיאלקטרי</strong>) ביחידות SI.
+        </p>
+<p>
+</p></div>
+<p>
+            בצורה מתמטית:
+          </p>
+<div class="snotice">
+
+<p>
+              $$\oint \vec{E} \cdot \vec{d S} = \frac{q}{\varepsilon_0}$$
+            </p>
+<p>
+</p></div>
+<h3>
+                שימושים לחוק גאוס
+              </h3>
+<p>
+                בדרך כלל, משתמשים בחוק גאוס לחישוב שדות חשמליים. להבדיל משיטת הסופרפוזיציה שעוזרת לפתור הרבה בעיות שונות (אפילו יחסית קשות), השימוש בחוק גאוס למטרת חישוב שדות חשמליים מוגבל למספר מצומצם של בעיות בהן יש סימטריה מובהקת. אם אנחנו יודעים מראש את הכיוון של וקטור השדה החשמלי בכל נקודה שמעניינת אותנו, ואם ניתן לבחור משטח גאוסי כך שחישוב השטף החשמלי דרכו יהיה פשוט, אז אפשר ואף צריך להשתמש בחוק גאוס.
+              </p>
+<p>
+                כידוע, לקח לניוטון די הרבה שנים להוכיח שכוח הכבידה הפועל על חלקיק מצד כדור (כמו כדה"א) לא ישתנה אם כל המסה של הכדור תידחס למרכזו. כדי להוכיח את זה באמצעות עקרון הסופרפוזיציה, הוא נאלץ לפתח את ענף החשבון האינטגרלי. כעת תראו כיצד בקלות אפשר לפתור בעיה כזאת באמצעות חוק גאוס. ניקח כדור הטעון במטען $q$ (באופן אחיד), ונחשב את גודל השדה החשמלי מחוץ לכדור במרחק $r$ ממרכזו (איור 6).
+              </p>
+<picture class="caption aligncenter">
+    
+    <source media="(max-width: 230px)" srcset="/assets/resized/180/charged_ball.png" />
+    
+    <source media="(max-width: 530px)" srcset="/assets/resized/480/charged_ball.png" />
+    
+    <source media="(max-width: 690px)" srcset="/assets/resized/640/charged_ball.png" />
+    
+    
+    <img src="/assets/posts/2014/09/charged_ball.png" style="display:block; margin: 0 auto;max-width:417px;" />
+
+
+    <p class="caption-text">
+      
+      איור 6 – שדה שיוצר כדור טעון
+      
+    </p>
+</picture>
+
+<p>
+                משיקולי סימטריה ברור כי וקטור השדה החשמלי $\vec{E}$ מכוון בכל מקום בכיוון הרדיוס. השטף דרך ספירה בעלת רדיוס $r$ שווה
+              </p>
+<p>
+                $$\Phi = E S = 4 \pi r^2 E$$
+              </p>
+<p>
+                מצד אחר, לפי חוק גאוס
+              </p>
+<p>
+                $$\Phi = \frac{q}{\varepsilon_0}$$
+              </p>
+<p>
+                מכאן מקבלים
+              </p>
+<p>
+                $$E = \frac{1}{4 \pi \varepsilon_0} \frac{q}{r^2}$$
+              </p>
+<p>
+                שדה שיוצר כדור טעון מבחוץ זהה לשדה שיוצר מטען נקודתי הממוקם במרכז הכדור. כמובן שאותו הדבר נכון לגבי שדה הכבידה, כי גם כוח הכובד נמצא ביחס הפוך ל<strong>ריבוע</strong> המרחק.
+              </p>
+<p>
+<strong>מישור אינסופי טעון</strong>
+</p>
+<p>
+                נניח כי יש לנו מישור אינסופי טעון בעל צפיפות מטען שטחית $\sigma$ (איור 7). מסימטריה ברור כי בכל מקום, וקטור השדה החשמלי $\vec{E}$ מאונך למישור (תנאי האינסופיות של המישור מאפשר לנו להתעלם מאי-אחידות של השדה בקצות המישור).
+              </p>
+<picture class="caption aligncenter">
+    
+    <source media="(max-width: 230px)" srcset="/assets/resized/180/infinite_charged_sheet.png" />
+    
+    <source media="(max-width: 530px)" srcset="/assets/resized/480/infinite_charged_sheet.png" />
+    
+    <source media="(max-width: 690px)" srcset="/assets/resized/640/infinite_charged_sheet.png" />
+    
+    <source media="(max-width: 850px)" srcset="/assets/resized/800/infinite_charged_sheet.png" />
+    
+    
+    <img src="/assets/posts/2014/09/infinite_charged_sheet.png" style="display:block; margin: 0 auto;max-width:595px;" />
+
+
+    <p class="caption-text">
+      
+      איור 7 – מישור אינסופי טעון
+      
+    </p>
+</picture>
+
+<p>
+                 
+              </p>
+<p>
+                נבחר בתור משטח גאוסי גליל הממוקם בצורה סימטרית ביחס למישור. השטף החשמלי הבוקע דרך צידי הגליל שווה לאפס בעוד שדרך הבסיסים הוא שווה $E S$. לכן השטף הכולל
+              </p>
+<p>
+                $$\Phi = 2 E S$$
+              </p>
+<p>
+                חוק גאוס אומר לנו
+              </p>
+<p>
+                $$\Phi = \frac{q}{\varepsilon_0} = \frac{\sigma S}{\varepsilon_0}$$
+              </p>
+<p>
+                לפיכך
+              </p>
+<p>
+                $$E = \frac{\sigma}{2 \varepsilon_0}$$
+              </p>
+<p>
+<strong>מוליך טעון</strong>
+</p>
+<p>
+                מלבד חישוב שדות חשמליים, חוק גאוס עוזר בהוכחה של תכונה חשובה מאוד של מוליכים. כידוע, עוצמת השדה החשמלי בתוך מוליך שווה לאפס. אם היא לא הייתה שווה לאפס, היינו מקבלים זרם חשמלי ללא כל השקעה של אנרגיה ממקור חיצוני, וזה בניגוד לחוק שימור האנרגיה. אבל אז אם ניקח כל משטח סגור בתוך מוליך, נקבל שהשטף דרכו יהיה שווה לאפס. לפי חוק גאוס, זה אומר שמטען הכלוא בתוך המשטח שווה לאפס. זה נכון כמובן לגבי כל משטח <strong>בתוך</strong> המוליך כי <strong>בכל מקום</strong> בתוך המוליך השדה החשמלי שווה לאפס. מכאן נובעת עובדה חשובה:
+              </p>
+<div class="snotice" style="padding: 0 15px">
+
+<p>
+                  כל המטען של מוליך נמצא על השפה שלו.
+                </p>
+<p>
+</p></div>
+<h3>
+                    כמה הערות
+                  </h3>
+<ul>
+<li>
+                      הוכחנו את העובדה שכל המטען של מוליך נמצא על שפתו באמצעות חוק גאוס. אולם הנכונות של חוק גאוס, כפי שכבר אמרנו, נובעת מהעובדה שבחוק קולון יש $1/r^2$. זאת אומרת שניתן להוכיח את נכונות חוק קולון בעזרת ניסוי שיאשר את התכונה הספציפית הזאת של המוליכים (מיקום המטענים על השפה).
+                    </li>
+<li>
+                      חשוב להדגיש את העובדה שחוק גאוס מדבר על <strong>שטף חשמלי </strong>ולא על משהו אחר. לפעמים, כאשר מחשבים שטף חשמלי ומקבלים אפס בתוצאה, מסיקים שגם השדה שווה לאפס. זה כמובן לא נכון. קחו מטען חשמלי נקודתי ודמיינו לעצמכם משטח גאוסי ש<strong>לא</strong> עוטף את המטען – השטף החשמלי דרך המשטח יהיה שווה לאפס, אולם השדה בשום מקום במרחב לא יהיה שווה לאפס. כבר אמרנו למה זה קורה – קווי שדה אשר נכנסים למשטח גם יוצאים ממנו – דרך חלק אחד של המשטח בוקע שטף חשמלי חיובי בעוד שדרך החלק הנותר בוקע שטף חשמלי שלילי ב<strong>אותו</strong> הגודל. להבדיל מהדוגמאות שראינו, זוהי בעיה א-סימטרית, ולכן לא ניתן לקבוע בקלות את גודל השדה החשמלי בבעיה זו.
+                    </li>
+</ul>
+<h3>
+                    חוק גאוס למגנטיות
+                  </h3>
+<p>
+                    במגנטוסטטיקה, בדיוק כמו באלקטרוסטטיקה, מגדירים שטף מגנטי בתור מכפלה סקלרית של וקטור השדה המגנטי במשטח זעיר:
+                  </p>
+<p>
+                    $$\Phi = \vec{B} \cdot \vec{S}$$
+                  </p>
+<p>
+                    חוק גאוס הקודם אמר כי שטף חשמלי הבוקע דרך משטח סגור פרופורציוני למטען הכלוא בתוך המשטח. אילו היו קיימים בטבע מטענים מגנטיים (מונופול מגנטי), היינו יכולים לומר את אותו הדבר לגבי שטף מגנטי. אולם מפני שבשום ניסוי עד היום לא גילו מטען מגנטי, ניתן לנסח את חוק גאוס למגנטיות כך:
+                  </p>
+<div class="snotice" style="padding: 0 15px">
+
+<p>
+                      שטף מגנטי דרך משטח סגור תמיד שווה לאפס.
+                    </p>
+<p>
+</p></div>
+<p>
+                        בכתיב מתמטי:
+                      </p>
+<div class="snotice">
+
+<p>
+                          $$\oint \vec{B} \cdot \vec{dS} = 0$$
+                        </p>
+<p>
+</p></div>
+<p>
+                            לקווים של שדה מגנטי אין התחלה או סוף – הם נסגרים על עצמם (איור 8). לכן השטף המגנטי דרך כל משטח סגור שתבחרו בהכרח יהיה אפס – כל קו שדה מגנטי שיחדור אל תוך המשטח גם יצא ממנו.
+                          </p>
+<picture class="caption aligncenter">
+    
+    <source media="(max-width: 230px)" srcset="/assets/resized/180/magnetic_field_lines_examples.png" />
+    
+    <source media="(max-width: 530px)" srcset="/assets/resized/480/magnetic_field_lines_examples.png" />
+    
+    <source media="(max-width: 690px)" srcset="/assets/resized/640/magnetic_field_lines_examples.png" />
+    
+    <source media="(max-width: 850px)" srcset="/assets/resized/800/magnetic_field_lines_examples.png" />
+    
+    
+    <img src="/assets/posts/2014/09/magnetic_field_lines_examples.png" style="display:block; margin: 0 auto;max-width:645px;" />
+
+
+    <p class="caption-text">
+      
+      איור 8 – דוגמאות לשדות מגנטיים. שימו לב כי לקווי השדות אין התחלה או סוף
+      
+    </p>
+</picture>
+
+                <div class="clearfix"></div>
+			</div>
+            
+			
+            
+            
+             <!-- Author Box -->
+                				
+				<div class="row post-top-meta">
+					<div class="col-md-2">
+						<img class="author-thumb" src="/assets/images/admin-avatar.png" alt="צוות ePhysics">
+					</div>
+					<div class="col-md-10">
+						<a target="_blank" class="link-dark" href="https://ephysics.co.il" style="font-weight: bold;">צוות ePhysics</a>
+                        <a target="_blank" href="https://twitter.com/ephysicsisrael" class="btn follow">עקוב</a>
+						<br />
+                        <span class="author-description">צוות האתר (כותבים ועורכים).</span>
+					</div>
+				</div>				
+                
+            
+            
+            <!-- Begin Comments
+            ================================================== -->
+            <section>
+            <div id="comments">
+                
+            </div>
+            </section>
+            <!--End Comments
+            ================================================== -->
+            
+            
+
+		</div>
+		<!-- End Post -->
+
+
+        
+        
+        
+
+	</div>
+
+<!-- End Article
+================================================== -->
+</main>
+
+<!-- Footer
+================================================== -->
+<footer class="footer container text-center">
+  <ul class="p-0 mb-1 small">
+    
+    </ul>
+    <div class="copyright small">
+        2013-2022 © כל הזכויות שמורות ל-ePhysics.co.il | <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img decoding="async" alt="Creative Commons License" style="border-width:0;vertical-align:middle" src="https://licensebuttons.net/l/by-nc-sa/3.0/80x15.png" width="80" height="15"></a>
+    </div>
+</footer>
+
+<!-- JavaScript
+================================================== -->
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/theme.js"></script>
+
+</body>
+
+</html>
