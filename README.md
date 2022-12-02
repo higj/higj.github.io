@@ -1,1 +1,0 @@
-# higj.github.io
